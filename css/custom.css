@@ -1,0 +1,85 @@
+header{
+    background-color: var(--blue);
+    padding: 30px 0;
+    font-family: "Lato";
+}
+.header-in{
+display: flex;
+flex-direction: column;
+gap: 20px;
+
+}
+.header-in-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: var(--white);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    flex: 1;
+}
+.header-left-in{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.header-center{
+    flex: 1;
+}
+.search-icon{
+    display: flex;
+}
+
+.header-right a{
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.header-in-bottom .header-list ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.header-list ul li a{
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(--white);
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width:1023px){
+.header-in-bottom{
+    display: none;
+}
+.header-in-top{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 20px;
+}
+.header-left-text{
+    display: none;
+}
+.header-right{
+    display: none;
+}
+.search-text{
+    display: none;
+}
+.menu-icon{
+    flex: 1;
+}
+.header-left{
+    flex: 1;
+}
+.header-center{
+    flex: 1;
+}
+
+}

@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    --white: #ffffff;
+    --black: #1a1a1a;
+    --para: #5d5d5d;
+    --gray: #f5f5f5;
+    --blue: #172a55;
+    --yellow: #cc922f;
+  }
+  body {
+    font-family: "Teodor TRIAL";
+    font-weight: 400;
+  }
+  h1 {
+    font-size: 87px;
+    color: var(--text-white);
+  }
+  h2 {
+    font-size: 52px;
+  }
+  h3 {
+    font-size: 42px;
+  }
+  h4 {
+    font-size: 32px;
+  }
+  h5 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .p-sm {
+    font-size: 14px;
+  }
+  a {
+    text-decoration: none;
+    display: inline-block;
+  }
+  ul,
+  ol {
+    list-style-type: none;
+  }
+  .btn-white {
+    width: auto;
+    padding: 9px 20px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: var(--text-black);
+  }
+  .btn-blue {
+    width: auto;
+    padding: 9px 20px;
+    border: none;
+    outline: none;
+    background-color: var(--text-blue);
+    color: var(--text-white);
+  }
+  .btn-yellow {
+    width: auto;
+    padding: 9px 20px;
+    border: none;
+    outline: none;
+    background-color: var(--text-yellow);
+    color: var(--text-white);
+  }
+  .container-fluid {
+    
+    width: 100%;
+    padding: 0 3%;
+    /* background-color: red; */
+    margin: 0 auto;
+  }
+  .container {
+    max-width: 1290px;
+    width: 100%;
+    padding: 0 5%;
+    margin: 0 auto;
+    /* background-color: green; */
+  }
+  
+  @font-face {
+    font-family: "Teodor TRIAL";
+    src: url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-ExtraBold.woff2")
+        format("woff2"),
+      url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-ExtraBold.woff")
+        format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Teodor TRIAL";
+    src: url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-Bold.woff2")
+        format("woff2"),
+      url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-Bold.woff")
+        format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Teodor TRIAL";
+    src: url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-BoldItalic.woff2")
+        format("woff2"),
+      url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-BoldItalic.woff")
+        format("woff");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Teodor TRIAL";
+    src: url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-ExtraBoldItalic.woff2")
+        format("woff2"),
+      url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-ExtraBoldItalic.woff")
+        format("woff");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Teodor TRIAL";
+    src: url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-Light.woff2")
+        format("woff2"),
+      url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-Light.woff")
+        format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Teodor TRIAL";
+    src: url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-Heavy.woff2")
+        format("woff2"),
+      url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-Heavy.woff")
+        format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Teodor TRIAL";
+    src: url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-HeavyItalic.woff2")
+        format("woff2"),
+      url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-HeavyItalic.woff")
+        format("woff");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Teodor TRIAL";
+    src: url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-RegularItalic.woff2")
+        format("woff2"),
+      url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-RegularItalic.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Teodor TRIAL";
+    src: url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-SemiBoldItalic.woff2")
+        format("woff2"),
+      url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-SemiBoldItalic.woff")
+        format("woff");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Teodor TRIAL";
+    src: url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-Medium.woff2")
+        format("woff2"),
+      url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-Medium.woff")
+        format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Teodor TRIAL";
+    src: url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-SemiBold.woff2")
+        format("woff2"),
+      url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-SemiBold.woff")
+        format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Teodor TRIAL";
+    src: url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-MediumItalic.woff2")
+        format("woff2"),
+      url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-MediumItalic.woff")
+        format("woff");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Teodor TRIAL";
+    src: url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-LightItalic.woff2")
+        format("woff2"),
+      url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-LightItalic.woff")
+        format("woff");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Teodor TRIAL";
+    src: url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-Thin.woff2")
+        format("woff2"),
+      url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-Thin.woff")
+        format("woff");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Teodor TRIAL";
+    src: url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-Regular.woff2")
+        format("woff2"),
+      url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-Regular.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Teodor TRIAL";
+    src: url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-ThinItalic.woff2")
+        format("woff2"),
+      url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-ThinItalic.woff")
+        format("woff");
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Teodor TRIAL";
+    src: url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-Regular.woff2")
+        format("woff2"),
+      url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-Regular.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Teodor TRIAL";
+    src: url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-Regular.woff2")
+        format("woff2"),
+      url("../assets/fonts/transfonter.org-20250320-114548/TeodorTRIAL-Regular.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Beyond Infinity - Demo";
+    src: url("../assets/fonts/transfonter.org-20250320-114548/BeyondInfinity.woff2")
+        format("woff2"),
+      url("../assets/fonts/transfonter.org-20250320-114548/BeyondInfinity.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
