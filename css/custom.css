@@ -438,9 +438,46 @@ margin-right: auto;
 .about-center{
     position: absolute;
     top: 40%;
-    left: 44%;
+    left: -8%;
     z-index: 9999999;
     
 
 }
+.about-center img{
+    width: 100%;
+}
+/* responsive design  */
+@media screen and (max-width:810px){
+    .about-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-left-in{
+        width: 100%;
+        padding: 50px 0;
+    }
+    .about-right{
+        position: relative;
+        width: 100%;
+    }
+    .about-center{
+        top: -4%;
+        right: -10px;
+        left: auto;
+    }
+    .about-center img{
+       width: 80%;
+    }
+}
+@media screen and (max-width:550px){
+    .about-center{
+        top: -7%;
+        right: -80px;
+        left: auto;
+    }
+    .about-center img{
+       width: 50%;
+    }
+}
+
 
