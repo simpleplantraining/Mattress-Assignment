@@ -173,3 +173,112 @@ header {
 }
 
 /* mobile-nav-end */
+
+/* hero-start  */
+.hero-container {
+  position: relative;
+  font-family: "Lato";
+}
+.hero-img {
+  width: 52%;
+  position: absolute;
+  height: 100%;
+  z-index: 99999;
+}
+.hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-content {
+  background-color: var(--blue);
+  position: relative;
+
+  right: 0;
+  top: 0;
+  background-image: url("../assets/images/whiteline.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+.hero-content-in {
+  display: flex;
+  flex-direction: column;
+
+  width: 45%;
+  gap: 40px;
+  margin-left: auto;
+  padding-left: 45px;
+}
+.hero-heading h1 {
+  color: var(--white);
+  font-family: "Teodor TRIAL";
+}
+.hero-para {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: var(--white);
+}
+.hero-content-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.hero-content-bottom p {
+  color: var(--white);
+}
+.hero-content-bottom a {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* hero-end  */
+
+/* craftman start  */
+.craftman-container{
+    background-color: #F1E8D6;
+}
+.craft-container-in{
+    padding: 60px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.top-italic p {
+    font-family: "Beyond Infinity - Demo";
+    color: var(--yellow);
+    font-size: 28px;
+    font-weight: 400;
+}
+.craft-top{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.craft-top-down{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    margin: 0 auto;
+
+
+}
+.craft-top-down p{
+    max-width: 820px;
+    font-family: "Lato";
+    
+}
+.craft-bottom{
+    
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+}
+
+/* craftman-end  */

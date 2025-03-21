@@ -83,6 +83,9 @@
     margin: 0 auto;
     /* background-color: green; */
   }
+  .spacer{
+    height: 150px;
+  }
   
   @font-face {
     font-family: "Teodor TRIAL";
