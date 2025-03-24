@@ -16,3 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         menuIcon.style.display = "block"; 
     });
 });
+
+
+var splide = new Splide( '.splide' );
+splide.mount();
