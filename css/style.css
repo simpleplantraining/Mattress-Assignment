@@ -82,6 +82,17 @@
     background-color: var(--yellow);
     color: var(--white);
   }
+  .btn-lined{
+    width: auto;
+    padding: 9px 20px;
+    border: 1px solid #F0ECE4;
+    outline: none;
+    background-color: none;
+    color: var(--white);
+  }
+  .text-white{
+    color: var(--white);
+  }
   .container-fluid {
     
     width: 100%;
