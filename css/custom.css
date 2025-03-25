@@ -332,9 +332,11 @@ header {
 }
 
 .craft-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: auto;
+  height: auto;
+  max-width: 200px;
+  max-height: 80px;
+  
 }
 /* responsive design  */
 @media screen and (max-width: 767px) {
@@ -940,6 +942,8 @@ color: var(--yellow);
 
 
 
+
+
 /* footer style starts */
 
 .footer {
@@ -1212,5 +1216,121 @@ color: var(--yellow);
       gap: 0px;
   }
 }
+
+/* footer-end  */
+
+/* mattress-resource start  */
+.mattress-resource-container{
+  background-color: #f0ece4;
+}
+.mattress-res-in{
+  display: grid;
+  
+  padding-top: 78px;
+  
+  grid-template-columns: 2fr 1fr;
+}
+.mattress-resource-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 100px;
+  padding-left: 78px;
+  
+}
+.res-left-up{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.res-left-up span{
+font-size: 133px;
+font-family: 'Teodor TRIAL';
+line-height: 91%;
+letter-spacing: -1%;
+margin: 0;
+padding: 0;
+
+
+}
+.res-left-up span:nth-child(2){
+  color: var(--yellow );
+}
+.res-left-down{
+  display: flex;
+  gap: 10px;
+}
+.res-left-down img{
+  aspect-ratio: 1/1;
+}
+.mattress-resource-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top:30px ;
+}
+.res-right-up{
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+.res-right-up p{
+  max-width: 45ch;
+  text-transform: capitalize;
+  color: var(--para);
+  line-height: 140%;
+  letter-spacing: 0px;
+}
+.res-right-up a{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 100%;
+}
+.res-right-down img{
+width: 100%;
+height: 100%;
+}
+
+/* responsive part  */
+@media screen and (max-width:1200px){
+  .mattress-resource-left{
+    padding-left: 50px;
+  }
+  .res-left-up span{
+    font-size: 100px;
+  }
+  
+}
+@media screen and (max-width:1023px){
+
+.res-left-up span{
+  font-size: 82px;
+}
+.mattress-resource-left{
+  padding-left: 0px;
+}
+}
+@media screen and (max-width:767px){
+  .mattress-res-in{
+    grid-template-columns: 1fr ;
+  }
+  .mattress-resource-left{
+    gap: 20px;
+    position: relative;
+  }
+  .res-left-up{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .res-right-up p{
+    max-width: 100%;
+  }
+  .res-left-up span{
+    font-size: 52px;
+  }
+}
+
+/* mattress-resource end  */
 
 
