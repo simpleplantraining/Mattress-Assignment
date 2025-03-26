@@ -73,7 +73,6 @@
     color: var(--white);
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 12px;
   }
   .btn-yellow {
     width: auto;
@@ -81,19 +80,6 @@
     border: none;
     outline: none;
     background-color: var(--yellow);
-    color: var(--white);
-    font-size: 12px;
-  }
-  .btn-lined{
-    width: auto;
-    padding: 9px 20px;
-    border: 1px solid #F0ECE4;
-    outline: none;
-    background-color: none;
-    color: var(--white);
-    font-size: 12px;
-  }
-  .text-white{
     color: var(--white);
   }
   .container-fluid {
